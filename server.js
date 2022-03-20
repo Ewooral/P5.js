@@ -1,7 +1,7 @@
 let path = require('path');
 let fs = require('fs');
 
-// fs.readFile('./HTML/index.html', 'utf8', (err, data) => {
+fs.readFile('./HTML/index.html', 'utf8', (err, data) => {
 //   if (err) throw err;
 //   console.log(data);
 
