@@ -13,7 +13,7 @@ let handleRequest = function (request, response) {
     <h1>Hello, world!</h1>
   `)
     
-// };
+};
 
 
 // const http = require('http');
