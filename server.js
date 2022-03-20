@@ -1,11 +1,11 @@
-let path = require('path');
-let fs = require('fs');
+// let path = require('path');
+// let fs = require('fs');
 
-fs.readFile('./HTML/index.html', 'utf8', (err, data) => {
-  if (err) throw err;
-  console.log(data);
+// fs.readFile('./HTML/index.html', 'utf8', (err, data) => {
+//   if (err) throw err;
+//   console.log(data);
 
-})
+// })
 
 let handleRequest = function (request, response) {
   response.writeHead(200, {'Content-Type': 'html'});
