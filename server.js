@@ -1,4 +1,4 @@
-// let path = require('path');
+let path = require('path');
 // let fs = require('fs');
 
 // fs.readFile('./HTML/index.html', 'utf8', (err, data) => {
