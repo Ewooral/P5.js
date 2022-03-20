@@ -8,7 +8,7 @@ fs.readFile('./HTML/index.html', 'utf8', (err, data) => {
 })
 
 let handleRequest = function (request, response) {
-//   response.writeHead(200, {'Content-Type': 'html'});
+  response.writeHead(200, {'Content-Type': 'html'});
 //   response.end(`
 //     <h1>Hello, world!</h1>
 //   `)
