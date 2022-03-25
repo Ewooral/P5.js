@@ -35,6 +35,7 @@ function draw() {
   * 
   ** ELLIPSE
   * .......................................................
+  * 
   * Description
    Draws an ellipse (oval) to the screen. By default, the first two parameters set the location of the center of the ellipse, 
    and the third and fourth parameters set the shape's width and height. If no height is specified, the value of width is used for 
@@ -57,8 +58,9 @@ function draw() {
   * 
   * 
   * 
-  * CIRCLE
+  ** CIRCLE
   * .......................................................
+  * 
   * Description
   Draws a circle to the screen. A circle is a simple closed shape. 
   It is the set of all points in a plane that are at a given distance 
@@ -72,6 +74,80 @@ function draw() {
   d Number: diameter of the circle.
   *
   *
+  * 
+  * 
+  * 
+  ** LINE 
+  * .......................................................
+  * 
+  * Description
+  Draws a line (a direct path between two points) to the screen. If called with only 4 parameters, it will draw a line in 2D with a default width of 1 pixel. This width can be modified by using the strokeWeight() function. A line cannot be filled, therefore the fill() function will not affect the color of a line. So to color a line, use the stroke() function.
+
+  Syntax
+  line(x1, y1, x2, y2)
+  line(x1, y1, z1, x2, y2, z2)
+  Parameters
+  x1 Number: the x-coordinate of the first point
+  y1 Number: the y-coordinate of the first point
+  x2 Number: the x-coordinate of the second point
+  y2 Number: the y-coordinate of the second point
+  z1 Number: the z-coordinate of the first point
+  z2 Number: the z-coordinate of the second point
+  *
+  *
+  * 
+  * 
+  * 
+  * 
+  * POINT
+  * .......................................................
+  * 
+  * Description
+  Draws a point, a coordinate in space at the dimension of one pixel. The first parameter is the horizontal value for the point, the second param is the vertical value for the point. The color of the point is changed with the stroke() function. The size of the point can be changed with the strokeWeight() function.
+
+  Syntax
+  point(x, y, [z])
+  point(coordinate_vector)
+  Parameters
+  x Number: the x-coordinate
+  y Number: the y-coordinate
+  z Number: the z-coordinate (for WebGL mode) (Optional)
+  coordinate_vector p5.Vector: the coordinate vector
+  *
+  *
+  * 
+  * 
+  * 
+  * 
+  *  QUAD
+  * .......................................................
+  * 
+  * Description
+  Draws a quad on the canvas. A quad is a quadrilateral, a four sided polygon. It is similar to a rectangle, but the angles between its edges are not constrained to ninety degrees. The first pair of parameters (x1,y1) sets the first vertex and the subsequent pairs should proceed clockwise or counter-clockwise around the defined shape. z-arguments only work when quad() is used in WEBGL mode.
+
+  Syntax
+  quad(x1, y1, x2, y2, x3, y3, x4, y4, [detailX], [detailY])
+  quad(x1, y1, z1, x2, y2, z2, x3, y3, z3, x4, y4, z4, [detailX], [detailY])
+  Parameters
+  x1 Number: the x-coordinate of the first point
+  y1 Number: the y-coordinate of the first point
+  x2 Number: the x-coordinate of the second point
+  y2 Number: the y-coordinate of the second point
+  x3 Number: the x-coordinate of the third point
+  y3 Number: the y-coordinate of the third point
+  x4 Number: the x-coordinate of the fourth point
+  y4 Number: the y-coordinate of the fourth point
+  detailX Integer: number of segments in the x-direction (Optional)
+  detailY Integer: number of segments in the y-direction (Optional)
+  z1 Number: the z-coordinate of the first point
+  z2 Number: the z-coordinate of the second point
+  z3 Number: the z-coordinate of the third point
+  z4 Number: the z-coordinate of the fourth point
+  *
+  *
+  * 
+  * 
+  * 
   * 
   * 
   * 
