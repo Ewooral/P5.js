@@ -172,6 +172,35 @@ function draw() {
   bl Number: optional radius of bottom-left corner. (Optional)
   detailX Integer: number of segments in the x-direction (for WebGL mode) (Optional)
   detailY Integer: number of segments in the y-direction (for WebGL mode) (Optional)
+  *
+  *
+  * 
+  * 
+  * 
+  * 
+  * 
+  * 
+  * SQUARE
+  * .......................................................
+  * 
+  * Description
+  Draws a square to the screen. A square is a four-sided shape with every angle at ninety degrees, and equal side size. This function is a special case of the rect() function, where the width and height are the same, and the parameter is called "s" for side size. By default, the first two parameters set the location of the upper-left corner, the third sets the side size of the square. The way these parameters are interpreted, may be changed with the rectMode() function.
+
+  The fourth, fifth, sixth and seventh parameters, if specified, determine corner radius for the top-left, top-right, lower-right and lower-left corners, respectively. An omitted corner radius parameter is set to the value of the previously specified radius value in the parameter list.
+
+  Syntax
+  square(x, y, s, [tl], [tr], [br], [bl])
+  Parameters
+  x Number: x-coordinate of the square.
+  y Number: y-coordinate of the square.
+  s Number: side size of the square.
+  tl Number: optional radius of top-left corner. (Optional)
+  tr Number: optional radius of top-right corner. (Optional)
+  br Number: optional radius of bottom-right corner. (Optional)
+  bl Number: optional radius of bottom-left corner. (Optional)
+  *
+  *
+  * 
 
  */
 
