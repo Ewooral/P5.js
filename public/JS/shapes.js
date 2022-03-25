@@ -184,7 +184,13 @@ function draw() {
   * .......................................................
   * 
   * Description
-  Draws a square to the screen. A square is a four-sided shape with every angle at ninety degrees, and equal side size. This function is a special case of the rect() function, where the width and height are the same, and the parameter is called "s" for side size. By default, the first two parameters set the location of the upper-left corner, the third sets the side size of the square. The way these parameters are interpreted, may be changed with the rectMode() function.
+  Draws a square to the screen. A square is a four-sided shape with 
+  every angle at ninety degrees, and equal side size. This function 
+  is a special case of the rect() function, where the width and height
+   are the same, and the parameter is called "s" for side size. 
+  By default, the first two parameters set the location of the 
+  upper-left corner, the third sets the side size of the square.
+  The way these parameters are interpreted, may be changed with the rectMode() function.
 
   The fourth, fifth, sixth and seventh parameters, if specified, determine corner radius for the top-left, top-right, lower-right and lower-left corners, respectively. An omitted corner radius parameter is set to the value of the previously specified radius value in the parameter list.
 
@@ -201,6 +207,30 @@ function draw() {
   *
   *
   * 
+  * 
+  * 
+  * 
+  * 
+  * 
+  * 
+  * TRIANGLE
+  * .......................................................
+  * 
+  * Description
+  Draws a triangle to the canvas. A triangle is a plane created by 
+  connecting three points. The first two arguments specify the first point, 
+  the middle two arguments specify the second point, and the last two
+  arguments specify the third point.
+
+  Syntax
+  triangle(x1, y1, x2, y2, x3, y3)
+  Parameters
+  x1 Number: x-coordinate of the first point
+  y1 Number: y-coordinate of the first point
+  x2 Number: x-coordinate of the second point
+  y2 Number: y-coordinate of the second point
+  x3 Number: x-coordinate of the third point
+  y3 Number: y-coordinate of the third point
 
  */
 
