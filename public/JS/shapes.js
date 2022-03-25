@@ -150,7 +150,28 @@ function draw() {
   * 
   * 
   * 
+  * RECT
+  * .......................................................
   * 
-  * 
+  * Description
+  Draws a rectangle on the canvas. A rectangle is a four-sided closed shape with every angle at ninety degrees. By default, the first two parameters set the location of the upper-left corner, the third sets the width, and the fourth sets the height. The way these parameters are interpreted, may be changed with the rectMode() function.
+
+  The fifth, sixth, seventh and eighth parameters, if specified, determine corner radius for the top-left, top-right, lower-right and lower-left corners, respectively. An omitted corner radius parameter is set to the value of the previously specified radius value in the parameter list.
+
+  Syntax
+  rect(x, y, w, [h], [tl], [tr], [br], [bl])
+  rect(x, y, w, h, [detailX], [detailY])
+  Parameters
+  x Number: x-coordinate of the rectangle.
+  y Number: y-coordinate of the rectangle.
+  w Number: width of the rectangle.
+  h Number: height of the rectangle. (Optional)
+  tl Number: optional radius of top-left corner. (Optional)
+  tr Number: optional radius of top-right corner. (Optional)
+  br Number: optional radius of bottom-right corner. (Optional)
+  bl Number: optional radius of bottom-left corner. (Optional)
+  detailX Integer: number of segments in the x-direction (for WebGL mode) (Optional)
+  detailY Integer: number of segments in the y-direction (for WebGL mode) (Optional)
+
  */
 
